@@ -155,6 +155,10 @@ img.intro-m {
     top: -205px;
 }
 
+.bottomsec img.line-right-m {
+    display: none;
+}
+
 .bottomsec h1 {
     clear: both;
 }
@@ -348,20 +352,21 @@ footer .footlist-container .footlist a:hover {
         margin: 0px;
     }
 
-    .hamburger-menu-m {
+    #hamburger-menu-m {
         width: 100%;
         display: none;
         background-color:hsl(270, 9%, 17%);
         padding: 25px;
+        height: 100%;
     }
 
-    .hamburger-menu-m div {
+    #hamburger-menu-m div.container {
         display: flex;
         flex-direction: column;
         margin: 0px;
     }
 
-    .hamburger-menu-m div a {
+    #hamburger-menu-m div.container a {
         display: block;
         text-transform: uppercase;
         list-style-type: none;
@@ -373,14 +378,30 @@ footer .footlist-container .footlist a:hover {
         color: #FFFFFF;
     }
 
-    .hamburger-menu-m div a#button-container-m {
+    #hamburger-menu-m div.container a#button-container-m {
         padding: 15px;
         margin-top: 10px;
         border: 2px solid #FFFFFF;
     }
 
+    #hamburger-menu-m div.container::after {
+        content: "";
+        height: 100%;
+    }
+
+    #hamburger-menu-m div.container div#filler {
+        flex-grow: 1;
+    }
+
+    body {
+        height: 100%;
+    }
+
     .topsec {
         padding: 100px 25px;
+        background-image: url("images/bg-pattern-intro-left-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: top left;
     }
 
     .topsec img.intro {
@@ -389,6 +410,10 @@ footer .footlist-container .footlist a:hover {
 
     .topsec h1::before {
         display: none;
+    }
+
+    .topsec a {
+        margin-bottom: 0px;
     }
 
     div.intro-img {
@@ -409,11 +434,22 @@ footer .footlist-container .footlist a:hover {
 
     .bottomsec hr {
         display: block;
-        width: 25%;
+        width: 50%;
+    }
+
+    .bottomsec {
+        padding-top: 140px;
     }
 
     .line-left, .line-right {
         display: none;
+    }
+
+    .bottomsec img.line-right-m {
+        display: block;
+        position: absolute;
+        top: -153px;
+        right: 0px;
     }
 
     .card-container {
@@ -433,6 +469,9 @@ footer .footlist-container .footlist a:hover {
     .howworksec {
         flex-direction: column;
         padding: 40px;
+        background-image: url("images/bg-pattern-how-we-work-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
     }
 
     .howworksec h2 {
@@ -446,6 +485,11 @@ footer .footlist-container .footlist a:hover {
 
     .howworksec .button {
         margin-bottom: 25px;
+    }
+
+    footer {
+        background-image: url("images/bg-pattern-footer-mobile.svg");
+        background-repeat: no-repeat;
     }
 
     footer .footer-top {

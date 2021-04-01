@@ -15,14 +15,15 @@
                 <li><a href="#">Account</a></li>
                 <li id="button-container"><a href="#" class="button">View plans</a></li>
             </ul>
-            <img src="images/icon-hamburger.svg" class="hamburger">
+            <img src="images/icon-hamburger.svg" class="hamburger" onclick="openMenu()">
         </header>
-        <div class="hamburger-menu-m">
-            <div>
+        <div id="hamburger-menu-m">
+            <div class="container">
                 <a href="#">How we work</a>
                 <a href="#">Blog</a>
                 <a href="#">Account</a>
                 <a href="#" id="button-container-m">View plans</a>
+                <div id="filler"></div>
             </div>
         </div>
         <div class="intro-img">
@@ -45,6 +46,7 @@
 
         <div class="bottomsec">
             <img src="images/bg-pattern-intro-left-desktop.svg" alt="background-image" class="line-left">
+            <img src="images/bg-pattern-intro-right-mobile.svg" alt="background-image-m" class="line-right-m">
             <hr>
             <h1>We’re different</h1>
 
@@ -120,5 +122,29 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            var toggle = 0;
+            function openMenu() {
+                if(toggle==0) {
+                    document.getElementById("hamburger-menu-m").style.display = "block";
+                    document.getElementsByClassName("intro-img")[0].style.display = "none";
+                    document.getElementsByClassName("topsec")[0].style.display = "none";
+                    document.getElementsByClassName("bottomsec")[0].style.display = "none";
+                    document.getElementsByTagName("footer")[0].style.display = "none";
+                    document.getElementsByClassName("hamburger")[0].src = "images/icon-close.svg";
+                    toggle = 1;
+                }
+                else {
+                    document.getElementById("hamburger-menu-m").style.display = "none";
+                    document.getElementsByClassName("intro-img")[0].style.display = "block";
+                    document.getElementsByClassName("topsec")[0].style.display = "block";
+                    document.getElementsByClassName("bottomsec")[0].style.display = "block";
+                    document.getElementsByTagName("footer")[0].style.display = "block";
+                    document.getElementsByClassName("hamburger")[0].src = "images/icon-hamburger.svg";
+                    toggle = 0;
+                }
+            }
+        </script>
 	</body>
 </html>
