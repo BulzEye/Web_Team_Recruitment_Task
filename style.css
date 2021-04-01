@@ -1,0 +1,474 @@
+body {
+    font-family: "Karla", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body > div, header, footer {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+    font-size: 3.5em;
+    line-height: 1em;
+}
+
+header {
+    text-align: right;
+    position: relative;
+}
+
+header img {
+    float: left;
+    margin: 10px 0px;
+}
+
+header ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 0.8em;
+    padding: 10px 20px;
+}
+
+header ul li#button-container {
+    font-size: 1em;
+    padding: 0px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: hsl(273, 4%, 51%);
+}
+
+header ul li a:hover {
+    color: hsl(270, 9%, 17%);
+}
+
+header ul li#button-container a.button {
+    color:hsl(270, 9%, 17%);
+}
+
+header ul li#button-container a.button:hover {
+    color: #FFFFFF;
+    background-color:hsl(270, 9%, 17%);
+}
+
+.button {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    text-decoration: none;
+    border: 2px solid hsl(270, 9%, 17%);
+    padding: 10px 20px;
+}
+
+img.hamburger {
+    display: none;
+}
+
+.hamburger-menu-m {
+    display: none;
+}
+
+.topsec {
+    background-color: hsl(256, 26%, 20%);
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 90px 140px;
+    position: relative;
+    /*
+    background-image: url("images/bg-pattern-intro-right-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    */
+}
+
+.topsec svg.line-right {
+    position: absolute;
+    z-index: 0;
+    right: 0px;
+    top: 0px;
+}
+
+.topsec h1::before {
+    content: "";
+    border-top: 1px solid white;
+    display: block;
+    margin-bottom: 40px;
+    width: 120px;
+}
+
+.topsec h1 {
+    margin-top: 0px;
+}
+
+.topsec p {
+    font-size: 0.9em;
+    line-height: 2em;
+}
+
+.topsec a {
+    display: inline-block;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.topsec a:hover {
+    background-color: #FFFFFF;
+    color:hsl(270, 9%, 17%);
+}
+
+.topsec img.intro {
+    float: right;
+    margin-left: 35px;
+    margin-bottom: 100px;
+}
+
+img.intro-m {
+    display: none;
+}
+
+.bottomsec {
+    color: hsl(270, 9%, 17%);
+    position: relative;
+}
+
+.bottomsec h1::before {
+    content: "";
+    border-top: 1px solid hsl(273, 4%, 51%);
+    display: block;
+    margin-bottom: 40px;
+    width: 120px;
+}
+
+.bottomsec hr {
+    display: none;
+}
+
+.bottomsec img.line-left {
+    position: absolute;
+    left: 0px;
+    top: -205px;
+}
+
+.bottomsec h1 {
+    clear: both;
+}
+
+.card-container {
+    display: flex;
+    margin: 0px -10px;
+    padding-top: 40px;
+}
+
+.card {
+    color: hsl(273, 4%, 51%);
+    width: 33%;
+    padding: 10px;
+    /* Alternate style, in case we don't use flexbox
+    float: left;
+    */
+}
+
+/* TODO: fix padding problem in cards - DONE */
+
+.card p {
+    font-size: 0.9em;
+    line-height: 1.8em;
+}
+
+.card h3 {
+    font-family: "DM Serif Display", serif;
+    color:hsl(270, 9%, 17%);
+    font-size: 1.5em;
+}
+
+.howworksec {
+    background-color: hsl(256, 26%, 20%);
+    margin: 150px auto;
+    clear: both;
+    padding: 77px;
+    background-image: url("images/bg-pattern-how-we-work-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.howworksec h2 {
+    font-size: 3em;
+    font-family: "DM Serif Display", serif;
+    color: #FFFFFF;
+    display: inline;
+    line-height: 1em;
+    margin: 0px;
+
+}
+
+.howworksec .button:hover {
+    background-color: #FFFFFF;
+    color:hsl(270, 9%, 17%);
+}/*
+.howworksec .button-container {
+    height: 100%;
+}*/
+
+.howworksec .button {
+    float: right;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    /*
+    width: 90px;
+    height: 15px;
+    */
+    margin-top: auto;
+    margin-bottom: auto;
+    /*align-self: center;*/
+}
+
+footer {
+    background-color: hsl(0, 0%, 98%);
+    text-transform: uppercase;
+    padding: 65px 140px;
+    background-image: url("images/bg-pattern-footer-desktop.svg");
+    background-repeat: no-repeat;
+}
+
+footer ul li a svg {
+    fill:#837D88;
+}
+
+footer ul li a svg:hover {
+    fill:hsl(270, 9%, 17%);
+}
+
+footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-top img {
+    display: inline;
+}
+
+footer .social {
+    display: inline;
+    text-align: right;
+    margin: 0px;
+}
+
+/*
+.footer-top {
+    clear: both;
+}
+*/
+
+hr {
+    clear: both;
+    margin-top: 35px;
+}
+
+
+.social li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+footer .footlist-container {
+    display: flex;
+}
+
+footer .footlist-container .footlist {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+}
+
+footer .footlist-container .footlist .fl-header {
+    color: hsl(273, 4%, 51%);
+    padding: 40px 0px;
+}
+
+footer .footlist-container .footlist a {
+    color: hsl(270, 9%, 17%);
+    text-decoration: none;
+    line-height: 2em;
+    /*display: block;*/
+}
+
+footer .footlist-container .footlist a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 400px) {
+    * {
+        box-sizing: border-box;
+    }
+    
+    body > div, header, footer {
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 25px;
+    }
+
+    header ul {
+        /* change later */
+        display: none;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .button {
+        font-size: 1em;
+    }
+
+    img.hamburger {
+        /*
+        border: 2px solid hsl(270, 9%, 17%);
+        padding: 10px;
+        */
+        display: inline;
+        margin: 0px;
+    }
+
+    .hamburger-menu-m {
+        width: 100%;
+        display: none;
+        background-color:hsl(270, 9%, 17%);
+        padding: 25px;
+    }
+
+    .hamburger-menu-m div {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .hamburger-menu-m div a {
+        display: block;
+        text-transform: uppercase;
+        list-style-type: none;
+        font-size: 1.25em;
+        padding: 25px;
+        margin: 0px auto;
+        width: 100%;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .hamburger-menu-m div a#button-container-m {
+        padding: 15px;
+        margin-top: 10px;
+        border: 2px solid #FFFFFF;
+    }
+
+    .topsec {
+        padding: 100px 25px;
+    }
+
+    .topsec img.intro {
+        display: none;
+    }
+
+    .topsec h1::before {
+        display: none;
+    }
+
+    div.intro-img {
+        padding: 0px;
+        width: 100%;
+    }
+
+    img.intro-m {
+        display: block;
+        width: 100%;
+        height: auto;
+        /*object-fit: contain;*/
+    }
+
+    .bottomsec h1::before {
+        display: none;
+    }
+
+    .bottomsec hr {
+        display: block;
+        width: 25%;
+    }
+
+    .line-left, .line-right {
+        display: none;
+    }
+
+    .card-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card p {
+        font-size: 1em;
+    }
+
+    .howworksec {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .howworksec h2 {
+        margin: 40px 0px;
+        font-size: 2.5em;
+    }
+
+    .linebreak {
+        display: none;
+    }
+
+    .howworksec .button {
+        margin-bottom: 25px;
+    }
+
+    footer .footer-top {
+        flex-direction: column;
+    }
+
+    footer .footer-top img, ul {
+        padding: 15px;
+    }
+
+    hr {
+        margin-top: 25px;
+    }
+
+    .footlist-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer .footlist-container .footlist {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9em;
+    }
+}
