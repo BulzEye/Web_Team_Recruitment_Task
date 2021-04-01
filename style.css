@@ -391,6 +391,7 @@ footer .footlist-container .footlist a:hover {
 
     #hamburger-menu-m div.container div#filler {
         flex-grow: 1;
+        flex-basis: auto;
     }
 
     body {
